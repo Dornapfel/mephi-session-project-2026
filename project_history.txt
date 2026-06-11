@@ -1,0 +1,206 @@
+    1  nmcli
+    2  sudo -i
+    3  apt update
+    4  shutdown
+    5  sysytemctl
+    6  systemctl
+    7  systemctl shutdown
+    8  systemctl poweroff
+    9  ping 8.8.8.8
+   10  apt update
+   11  apt install nmcli
+   12  nano
+   13  nano /etc/apt/sources.list
+   14  nano /etc/apt/sources.list
+   15  nano /etc/apt/sources.list
+   16  nano /etc/apt/sources.list
+   17  nano /etc/apt/sources.list
+   18  systemctl status openssh
+   19  systemctl status openssh-server
+   20  systemctl poweroff
+   21  systemctl status openssh-server
+   22  apt install openssh-client
+   23  apt install opnessh-server
+   24  apt install openssh-server
+   25  nano /etc/apt/sources.list
+   26  apt update
+   27  nano /etc/apt/sources.list
+   28  apt update
+   29  apt install openssh-server
+   30  ping deb.debian.org
+   31  nano /etc/resolv.conf 
+   32  apt update
+   33  apt update
+   34  ping deb.debian.org
+   35  ping 8.8.8.8
+   36  systemctl shutdown
+   37  systemctl poweroff
+   38  apt update
+   39  nano /etc/resolv.conf 
+   40  apt update
+   41  apt install curl
+   42  hostnamectl
+   43  hostnamectl --help
+   44  hostnamectl hostname mephi-2026.domain.local
+   45  hostname
+   46  ifconfig
+   47  sudo nano /etc/network/interfaces
+   48  nano /etc/network/interfaces
+   49  nano /etc/network/interfaces
+   50  hostnamectl
+   51  ping -c 8.8.8.8 > /home/vboxuser/network_check_4.4.4.4
+   52  ping -c 4 8.8.8.8 > /home/vboxuser/network_check_8-8-8-8
+   53  cat /home/vboxuser/network_check_
+   54  cat /home/vboxuser/network_check_8-8-8-8 
+   55  rm /home/vboxuser/network_check_4.4.4.4 
+   56  ping -c 4 192.168.1.1 >> /home/vboxuser/network_check_8-8-8-8
+   57  mv /home/vboxuser/network_check_8-8-8-8 /home/vboxuser/networck_check.txt
+   58  apt intsall nginx
+   59  apt install nginx
+   60  cat /home/vboxuser/networck_check.txt 
+   61  ping deb.debian.org
+   62  nano /etc/network/interfaces
+   63  ping 8.8.8.8
+   64  systemctl restart networking
+   65  ping deb.debian.org
+   66  ping 8.8.8.8
+   67  systemctl status networking
+   68  ping 8.8.8.8
+   69  ip link show
+   70  ip route show
+   71  nano /etc/network/interfaces
+   72  systemctl restart networking
+   73  ping 8.8.8.8
+   74  ip a
+   75  ip addr show
+   76  nano /etc/network/interfaces
+   77  systemctl restart networking
+   78  systemctl status networking
+   79  nano /etc/network/interfaces
+   80  systemctl restart networking
+   81  nano /etc/network/interfaces
+   82  systemctl restart networking
+   83  nano /etc/network/interfaces
+   84  systemctl restart networking
+   85  nano /etc/network/interfaces
+   86  ping 8.8.8.8
+   87  ping 8.8.8.8
+   88  nano /etc/network/interfaces
+   89  systemctl restart networking
+   90  ping 8.8.8.8
+   91  ping 8.8.8.8
+   92  systemctl restart networking
+   93  systemctl status networking
+   94  nano /etc/network/interfaces
+   95  systemctl restart networking
+   96  curl -v http://192.168.1.1
+   97  ping 8.8.8.8
+   98  systemctl poweroff
+   99  systemctl poweroff
+  100  fdisk dev/sdb
+  101  lsblk
+  102  ls /deb
+  103  ls /dev
+  104  ls -l /dev | grep sd
+  105  fdisk /dev/sdb
+  106  msfs.ext4 -L MEPHI_DATA /dev/sdb1
+  107  apt install mkfs
+  108  ls -l /sbin | grep mkfs
+  109  ls -l /sbin 
+  110  ls -l /sbin/
+  111  ls -l /sbin/ | grep mkfs
+  112  /sbin/mkfs.ext4 -L MEPHI_DATA /dev/sdb1
+  113  mkdir /data/mephi-web
+  114  mkdir -p /data/mephi-web
+  115  blkid /dev/sdb1
+  116  blkid /dev/sdb1
+  117  blkid /dev/sdb1 >> /etc/fstab
+  118  nano /etc/fstab 
+  119  mount -a
+  120  systemctl daemon-reload
+  121  mount -a
+  122  systemctl enable --now nginx
+  123  [2~[2~[2~[2~
+  124  systemctl status openssh-server
+  125  apt install openssh-server
+  126  ip a
+  127  journalctl -u nginx --since "5 minutes ago" > /tmp/nginx_recent_logs.txt
+  128  useradd mephi-admin
+  129  apt install useradd
+  130  ls -l /sbin/ | grep user
+  131  nano ~/.bashrc 
+  132  export $PATH=/sbin:$PATH
+  133  export PATH=/sbin:$PATH
+  134  nano ~/.bashrc 
+  135  useradd mephi-admin
+  136  passwd mephi-admin
+  137  groupadd mephi-devs
+  138  usermod -aG mephi-devs mephi-admin
+  139  chown -R mephi-admin:mephi-devs /data/mephi-web
+  140  chmod 2775 /data/mephi-web/
+  141  getenforce
+  142  apt install selinux-utils
+  143  getenforce
+  144  getenforce --help
+  145  getenforce enable
+  146  setenforce Enforcing
+  147  getenforce
+  148  nano /etc/selinux/config
+  149  nano /etc/selinux/config
+  150  getenforce
+  151  systemctl start selinux
+  152  systemctl reboot
+  153  getenforce
+  154  nano /etc/selinux/config 
+  155  sestatus
+  156  apt install selinux-basics selinux-policy-default policycoreutils-python-utils auditd
+  157  selinux-activate
+  158  systemctl reboot
+  159  check-selinux-installation
+  160  getenforce
+  161  apt remove selinux-basics selinux-policy-default policycoreutils-python-utils auditd selinux
+  162  apt remove
+  163  apt purge selinux-basics selinux-policy-default policycoreutils-python-utils auditd.
+  164  apt purge selinux-basics selinux-policy-default policycoreutils-python-utils auditd
+  165  nano /etc/ssh/sshd_config
+  166  systemctl restart sshd
+  167  nano /etc/security/access.conf 
+  168  nano /etc/pam.d/sshd 
+  169  find --name pam_list.co
+  170  find -name pam_list.co
+  171  find -name pam_list.co /
+  172  nano /etc/pam.d/sshd 
+  173  nano /data/mephi-web/index.html
+  174  nano /etc/nginx/nginx.conf 
+  175  systemctl restart nginx
+  176  curl http://localhost
+  177  nginx -T | grep root
+  178  nano /etc/nginx/sites-enabled/default 
+  179  nano /etc/nginx/nginx.conf 
+  180  systemctl restart nginx
+  181  curl http://localhost
+  182  nano /etc/nginx/nginx.conf 
+  183  nano /etc/nginx/sites-enabled/default 
+  184  nano /etc/nginx/nginx.conf 
+  185  nano /etc/nginx/sites-enabled/default 
+  186  nginx -T | grep root
+  187  curl http://localhost
+  188  systemctl status nginx
+  189  curl http://localhost:80
+  190  curl http://192.168.1.100
+  191  systemctl status nginx
+  192  nano /etc/nginx/sites-enabled/default 
+  193  ls -l /data/
+  194  ls -l /data/mephi-web/
+  195  nano /etc/nginx/sites-enabled/default 
+  196  systemctl nginx restart
+  197  systemctl restart nginx
+  198  curl http://localhost
+  199  curl http://192.168.1.100
+  200  nano /etc/nginx/sites-enabled/default 
+  201  curl http://192.168.1.100
+  202  service nginx reload
+  203  curl http://192.168.1.100
+  204  curl http://localhost
+  205  mkdir ~/project
+  206  history > ~/project/project_history.txt
